@@ -16,3 +16,13 @@ require 'app/controller'
 
 DataMapper.finalize
 DataMapper.auto_upgrade!
+
+module Sentinel
+  # Mount point
+  class API < Grape::API
+    version 'v1', using: :path
+    format :json
+
+    mount Auth
+  end
+end
