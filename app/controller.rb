@@ -10,16 +10,7 @@ class Auth < Grape::API
     end
     get :check do
       account = Account.first login: params[:login]
-      # rubocop:disable EmptyCaseCondition
-      case
-      # rubocop:enable EmptyCaseCondition
-      when account.nil?
-        404
-      when account[:password] == params[:password]
-        201
-      else
-        401
-      end
+      account[:password] == params[:password]
     end
 
     desc 'Create new account'
