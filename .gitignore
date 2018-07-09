@@ -1,1 +1,3 @@
-db/*.db
+/.bundler
+/vendor
+/db/*.db
