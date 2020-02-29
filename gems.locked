@@ -95,7 +95,7 @@ GEM
     rack (2.0.5)
     rack-accept (0.4.5)
       rack (>= 0.4)
-    rake (12.3.1)
+    rake (13.0.1)
     ruby-debug-ide (0.6.1)
       rake (>= 0.8.1)
     shotgun (0.9.2)
