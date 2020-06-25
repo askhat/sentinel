@@ -92,7 +92,7 @@ GEM
     mustermann-grape (1.0.0)
       mustermann (~> 1.0.0)
     public_suffix (3.0.2)
-    rack (2.0.5)
+    rack (2.2.3)
     rack-accept (0.4.5)
       rack (>= 0.4)
     rake (12.3.1)
